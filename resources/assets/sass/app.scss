@@ -7,3 +7,10 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$green: green;
+$red: red;
+body{
+  color: $green;
+  background-color: $red;
+}
