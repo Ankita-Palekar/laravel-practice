@@ -17,10 +17,10 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
 //    different types of views.
-    //    return view('pages.about');
-    //    return view('pages/about');
-    $people = ['Ankita', 'Apurva', 'Aditi'];
-    return view('pages.about', compact('people'));
+  //    return view('pages.about');
+  //    return view('pages/about');
+  $people = ['Ankita', 'Apurva', 'Aditi'];
+  return view('pages.about', compact('people'));
 });
 
 
@@ -28,13 +28,14 @@ Route::get('/aboutview', 'pagesController@show');
 
 
 Route::get('/hi', function ($id = 0) {
-	return $id;    
+  return $id;
 })->name('welcome1');
 
 Route::get('/redirect', function () {
-	// $url = route('welcome1e');
-	return redirect()->route('welcome1');
+  // $url = route('welcome1e');
+  return redirect()->route('welcome1');
 });
 
 Route::get('/user/{id}', 'UserController@show');
 
+Route::get('/cards', 'cardsController@get');
