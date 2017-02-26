@@ -40,3 +40,4 @@ Route::get('/user/{id}', 'UserController@show');
 
 Route::get('/cards', 'cardsController@get');
 Route::get('/cards/{card}', 'cardsController@show');
+Route::post('/cards/{card}/notes', 'notesController@store');
