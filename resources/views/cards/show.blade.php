@@ -16,4 +16,15 @@
         <input type="hidden" name="_token" id="token" value="{{csrf_token()}}">
         <button value="submit">Submit</button>
     </form>
+
+
+
+    <hr>
+
+
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
 @stop
