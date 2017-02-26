@@ -10,5 +10,8 @@ class Note extends Model
       return $this->belongsTo(Card::Class);
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
